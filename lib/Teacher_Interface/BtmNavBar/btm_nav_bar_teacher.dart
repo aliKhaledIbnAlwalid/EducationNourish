@@ -43,7 +43,6 @@ class _BtmNavBarTeacherState extends State<BtmNavBarTeacher> {
     const HomeTeacher(),
     const TeacherMaterialScreen(),
   ];
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -51,7 +50,7 @@ class _BtmNavBarTeacherState extends State<BtmNavBarTeacher> {
             ? _pages[_selectedIndex]
             : _pages[_selectedIndex - 0],
         bottomNavigationBar: BottomNavigationBar(
-          backgroundColor: const Color(0xff98afb0),
+          backgroundColor: const Color.fromARGB(255, 255, 255, 255),
           elevation: 0,
           selectedLabelStyle: const TextStyle(
               fontSize: 16,
@@ -60,8 +59,9 @@ class _BtmNavBarTeacherState extends State<BtmNavBarTeacher> {
             fontSize: 14,
           ),
           onTap: _navigateBottomBar,
+
           currentIndex: _selectedIndex,
-          selectedItemColor: const Color.fromARGB(255, 0, 0, 0),
+          selectedItemColor:  const Color(0xff008f99),
           type: BottomNavigationBarType.fixed,
           items: const [
             BottomNavigationBarItem(

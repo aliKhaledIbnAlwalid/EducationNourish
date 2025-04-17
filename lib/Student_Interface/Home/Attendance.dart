@@ -34,7 +34,7 @@ class Attendance extends StatelessWidget {
           ),
         ],
       ),
-      body: const AttendenceScreenBody(),
+      body:  AttendenceScreenBody(),
     );
   }
 }

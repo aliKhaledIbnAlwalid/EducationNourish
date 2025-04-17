@@ -2,26 +2,30 @@ import 'package:flutter/material.dart';
 
 class NeoNotificationsTeacherScreen extends StatelessWidget {
   final List<NeoNotification> notifications = [
-    // NeoNotification(
-    //   title: 'The results are in! Your earnings added up to \$0.04 in October.',
-    //   time: '5h',
-    // ),
-    // NeoNotification(
-    //   title:
-    //       'Get a more rewarding experience with the Mobile & Personal Protection Bundle.',
-    //   time: '1d',
-    // ),
-    // NeoNotification(
-    //   title:
-    //       'Welcome to Neo Money™! Don\'t forget to make a deposit to start earning 2.25% interest*.',
-    //   time: '3d',
-    // ),
-    // NeoNotification(
-    //   title:
-    //       'Don\'t miss out! For a limited time, get up to \$85* for each friend you refer to Neo.',
-    //   time: '4d',
-    // ),
+    NeoNotification(
+      title: 'The results are in! Your earnings added up to \$0.04 in October.',
+      time: '5h',
+    ),
+    NeoNotification(
+      title:
+          'Get a more rewarding experience with the Mobile & Personal Protection Bundle.',
+      time: '1d',
+    ),
+    NeoNotification(
+      title:
+          'Welcome to Neo Money™! Don\'t forget to make a deposit to start earning 2.25% interest*.',
+      time: '3d',
+    ),
+    NeoNotification(
+      title:
+          'Don\'t miss out! For a limited time, get up to \$85* for each friend you refer to Neo.',
+      time: '4d',
+    ),
   ];
+  List<NeoNotification> globalNotifications = [
+  NeoNotification(title: "New message!", time: "5h"),
+];
+
 
    NeoNotificationsTeacherScreen({super.key});
 

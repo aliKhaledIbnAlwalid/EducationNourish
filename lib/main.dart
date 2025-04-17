@@ -9,7 +9,6 @@ void main() async {
   final showHome = prefs.getBool('showHome') ?? false;
   runApp(MyApp(showHome: showHome));
 }
-
 class MyApp extends StatelessWidget {
   final bool showHome;
   const MyApp({Key? key, required this.showHome}) : super(key: key);
@@ -17,7 +16,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      
       debugShowCheckedModeBanner: false,
       home: showHome ? const ChoiceScreen() : OnBoardingScreen(),
     );
