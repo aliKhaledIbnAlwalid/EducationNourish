@@ -48,6 +48,7 @@ dependencies:
   path_provider: ^2.1.5
   permission_handler: ^12.0.0+1
   dio: ^5.8.0+1
+  file_picker: ^10.1.2
 
 
 dev_dependencies:
@@ -81,6 +82,7 @@ flutter:
     - assets/Intro_Screen_login/
     - assets/student/Home_Student/
     - assets/student/My_Teachers/
+    - assets/teacher/
     - assets/images/
     - assets/json/
 

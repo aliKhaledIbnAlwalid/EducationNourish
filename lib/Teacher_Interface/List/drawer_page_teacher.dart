@@ -1,7 +1,8 @@
 import 'package:edunourish/Student_Interface/BtmNavBar/Exams_students.dart';
-import 'package:edunourish/Student_Interface/BtmNavBar/Settings.dart';
+import 'package:edunourish/Student_Interface/BtmNavBar/Settings_student.dart';
 import 'package:edunourish/Student_Interface/BtmNavBar/profile_page_student.dart';
 import 'package:edunourish/Student_Interface/Home/subject_screen.dart';
+import 'package:edunourish/Teacher_Interface/BtmNavBar/Settings_teacher.dart';
 import 'package:flutter/material.dart';
 
 import '../Home/home_teacher.dart';
@@ -234,7 +235,7 @@ class DrawerPageTeacher extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => const SettingsPage(),
+                          builder: (context) => const SettingsTeacher(),
                         ),
                       );
                     },

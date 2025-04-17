@@ -1,9 +1,8 @@
-import 'package:edunourish/Student_Interface/List/My_Class_Schedule.dart';
 import 'package:edunourish/Teacher_Interface/Home/home_teacher.dart';
 import 'package:flutter/material.dart';
-
 import '../List/drawer_page_teacher.dart';
-import 'Settings.dart';
+import 'Settings_teacher.dart';
+import 'upload_material_screen.dart';
 
 class BtmNavBarTeacher extends StatefulWidget {
   const BtmNavBarTeacher({super.key});
@@ -13,10 +12,10 @@ class BtmNavBarTeacher extends StatefulWidget {
 }
 
 class _BtmNavBarTeacherState extends State<BtmNavBarTeacher> {
-  int _selectedIndex = 2;
+  int _selectedIndex = 1;
 
   void _navigateBottomBar(int index) {
-    if (index == 4) {
+    if (index == 3) {
       _showSettingsModal();
     } else {
       setState(() {
@@ -34,37 +33,35 @@ class _BtmNavBarTeacherState extends State<BtmNavBarTeacher> {
       ),
       builder: (context) => SizedBox(
         height: MediaQuery.of(context).size.height * 0.9,
-        child: const SettingsPage(),
+        child: const SettingsTeacher(),
       ),
     );
   }
 
-
   final List<Widget> _pages = [
     const DrawerPageTeacher(),
-    MyClassSchedule(),
     const HomeTeacher(),
-    const DrawerPageTeacher(),
+    const TeacherMaterialScreen(),
   ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: _selectedIndex < 1
+        body: _selectedIndex < 0
             ? _pages[_selectedIndex]
             : _pages[_selectedIndex - 0],
         bottomNavigationBar: BottomNavigationBar(
-          backgroundColor:  const Color(0xff98afb0),
+          backgroundColor: const Color(0xff98afb0),
           elevation: 0,
           selectedLabelStyle: const TextStyle(
               fontSize: 16,
               fontWeight: FontWeight.bold), // Increase selected label size
           unselectedLabelStyle: const TextStyle(
             fontSize: 14,
-          ), 
+          ),
           onTap: _navigateBottomBar,
           currentIndex: _selectedIndex,
-         selectedItemColor: const Color.fromARGB(255, 0, 0, 0),
+          selectedItemColor: const Color.fromARGB(255, 0, 0, 0),
           type: BottomNavigationBarType.fixed,
           items: const [
             BottomNavigationBarItem(
@@ -74,13 +71,13 @@ class _BtmNavBarTeacherState extends State<BtmNavBarTeacher> {
               ),
               label: 'List',
             ),
-            BottomNavigationBarItem(
-              icon: Icon(
-                Icons.table_view_rounded,
-                size: 25,
-              ),
-              label: 'Schedule',
-            ),
+            // BottomNavigationBarItem(
+            //   icon: Icon(
+            //     Icons.table_view_rounded,
+            //     size: 25,
+            //   ),
+            //   label: 'Schedule',
+            // ),
             BottomNavigationBarItem(
               icon: Icon(
                 Icons.home_rounded,
@@ -90,10 +87,10 @@ class _BtmNavBarTeacherState extends State<BtmNavBarTeacher> {
             ),
             BottomNavigationBarItem(
               icon: Icon(
-                Icons.sports_gymnastics_rounded,
+                Icons.upload,
                 size: 25,
               ),
-              label: 'Activities',
+              label: 'Material',
             ),
             BottomNavigationBarItem(
               icon: Icon(

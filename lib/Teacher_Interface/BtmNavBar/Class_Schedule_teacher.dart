@@ -1,9 +1,7 @@
+import 'package:edunourish/Teacher_Interface/Home/notifiactions_screen_teacher.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
-import '../Home/notifiactions_screen.dart';
-
-class MyClassSchedule extends StatelessWidget {
+class ClassScheduleTeacher extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,7 +14,7 @@ class MyClassSchedule extends StatelessWidget {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => NeoNotificationsScreen(),
+                builder: (context) => NeoNotificationsTeacherScreen(),
               ),
             );
           },
@@ -59,36 +57,7 @@ class MyClassSchedule extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 16),
-            const Text(
-              "Subjects",
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-            ),
-            SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: Row(
-                children: [
-                  SubjectCard(
-                      subject: "Math",
-                      imagePath: "assets/images/scienceLogo.png"),
-                  const SizedBox(width: 10),
-                  SubjectCard(
-                      subject: "Science",
-                      imagePath: "assets/images/scienceLogo.png"),
-                  const SizedBox(width: 10),
-                  SubjectCard(
-                      subject: "English",
-                      imagePath: "assets/images/scienceLogo.png"),
-                  const SizedBox(width: 10),
-                  SubjectCard(
-                      subject: "Arabic",
-                      imagePath: "assets/images/scienceLogo.png"),
-                  const SizedBox(width: 10),
-                  SubjectCard(
-                      subject: "ICT",
-                      imagePath: "assets/images/scienceLogo.png"),
-                ],
-              ),
-            ),
+          
             const SizedBox(height: 16),
             const Text("Class Schedule",
                 style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
@@ -122,7 +91,7 @@ class SubjectCard extends StatelessWidget {
       height: 100,
       width: 150,
       decoration: BoxDecoration(
-        color: const  Color(0xffe8e6e9),
+        color: const Color(0xffe8e6e9),
         borderRadius: BorderRadius.circular(15),
       ),
       child: Row(

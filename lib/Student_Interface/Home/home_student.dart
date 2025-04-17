@@ -3,9 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:edunourish/Student_Interface/BtmNavBar/Exams_students.dart';
 import 'package:edunourish/Student_Interface/Home/Attendance.dart';
-
 import 'Restaurant.dart';
-import 'notifiactions_screen.dart';
+import 'notifiactions_screen_student.dart';
 import 'subject_screen.dart';
 
 class NewsPage extends StatelessWidget {

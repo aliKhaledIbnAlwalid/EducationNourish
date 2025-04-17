@@ -1,12 +1,12 @@
 import 'package:edunourish/Student_Interface/BtmNavBar/Exams_students.dart';
-import 'package:edunourish/Student_Interface/BtmNavBar/Settings.dart';
+import 'package:edunourish/Student_Interface/BtmNavBar/Settings_student.dart';
 import 'package:edunourish/Student_Interface/BtmNavBar/profile_page_student.dart';
 import 'package:edunourish/Student_Interface/Home/subject_screen.dart';
 import 'package:flutter/material.dart';
 import '../Home/Attendance.dart';
 import '../Home/Restaurant.dart';
-import '../Home/notifiactions_screen.dart';
-import 'My_Class_Schedule.dart';
+import '../Home/notifiactions_screen_student.dart';
+import 'Class_Schedule_student.dart';
 import 'grades_student.dart';
 import 'my_teachers.dart';
 
@@ -140,7 +140,7 @@ class DrawerPage extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => MyClassSchedule(),
+                          builder: (context) => ClassScheduleStudent(),
                         ),
                       );
                     },
@@ -237,7 +237,7 @@ class DrawerPage extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => const SettingsPage(),
+                          builder: (context) => const SettingsStudent(),
                         ),
                       );
                     },

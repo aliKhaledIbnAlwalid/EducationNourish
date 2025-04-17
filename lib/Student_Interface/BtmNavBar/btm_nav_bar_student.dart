@@ -1,9 +1,9 @@
-import 'package:edunourish/Student_Interface/List/My_Class_Schedule.dart';
+import 'package:edunourish/Student_Interface/List/Class_Schedule_student.dart';
 import 'package:flutter/material.dart';
 import '../List/drawer_page.dart';
 import '../Home/home_student.dart';
 import 'Activities.dart';
-import 'Settings.dart';
+import 'Settings_student.dart';
 
 class BtmNavBarStudent extends StatefulWidget {
   const BtmNavBarStudent({super.key});
@@ -34,7 +34,7 @@ class _BtmNavBarStudentState extends State<BtmNavBarStudent> {
       ),
       builder: (context) => SizedBox(
         height: MediaQuery.of(context).size.height * 0.9,
-        child: const SettingsPage(),
+        child: const SettingsStudent(),
       ),
     );
   }
@@ -42,7 +42,7 @@ class _BtmNavBarStudentState extends State<BtmNavBarStudent> {
 
   final List<Widget> _pages = [
     const DrawerPage(),
-    MyClassSchedule(),
+    ClassScheduleStudent(),
     const HomeStudent(),
      Activities(),
   ];
