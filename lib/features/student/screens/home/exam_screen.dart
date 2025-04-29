@@ -164,7 +164,7 @@ class _ExamScreenState extends State<ExamScreen> {
         borderRadius: BorderRadius.circular(14),
       ),
       child: Padding(
-        padding: const EdgeInsets.all(16),
+        padding: const EdgeInsets.all(8),
         child: Row(
           children: [
             CircleAvatar(
@@ -172,7 +172,7 @@ class _ExamScreenState extends State<ExamScreen> {
               backgroundColor: color.withOpacity(0.2),
               child: Icon(_subjectIcon(e.subjectName), size: 28, color: color),
             ),
-            const SizedBox(width: 16),
+            const SizedBox(width: 5),
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -180,20 +180,20 @@ class _ExamScreenState extends State<ExamScreen> {
                   Text(
                     e.subjectName,
                     style: const TextStyle(
-                        fontSize: 18, fontWeight: FontWeight.bold),
+                        fontSize: 15, fontWeight: FontWeight.bold),
                   ),
                   const SizedBox(height: 8),
                   Row(
                     children: [
                       Icon(Icons.calendar_today,
-                          size: 16, color: Colors.grey.shade600),
-                      const SizedBox(width: 6),
+                          size: 14, color: Colors.grey.shade600),
+                      const SizedBox(width: 2),
                       Text(_fmtDate(e.date),
                           style: TextStyle(
                               fontSize: 14, color: Colors.grey.shade700)),
-                      const SizedBox(width: 16),
+                      const SizedBox(width: 8),
                       Icon(Icons.access_time,
-                          size: 16, color: Colors.grey.shade600),
+                          size: 14, color: Colors.grey.shade600),
                       const SizedBox(width: 6),
                       Text(_fmtTime(e.date),
                           style: TextStyle(

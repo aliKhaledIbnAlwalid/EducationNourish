@@ -38,7 +38,6 @@ class MyApp extends StatelessWidget {
           ChoiceScreen.routeName: (_) => const ChoiceScreen(),
           BtmNavBarStudent.routeName: (_) => const BtmNavBarStudent(),
           BtmNavBarTeacher.routeName: (_) => const BtmNavBarTeacher(),
-
         },
         onGenerateRoute: (settings) {
           if (settings.name == LoginScreen.routeName) {

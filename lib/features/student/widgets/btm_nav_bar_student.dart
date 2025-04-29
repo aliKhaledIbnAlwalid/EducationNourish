@@ -20,7 +20,7 @@ class _BtmNavBarStudentState extends State<BtmNavBarStudent> {
 
   final List<Widget> _pages = [
     const DrawerPage(),
-    ClassScheduleStudent(),
+    MyClassSchedule(),
     const HomeStudent(),
     Activities(),
   ];
